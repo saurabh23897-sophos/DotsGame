@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player 2"
+        android:id="@+id/textView4"
+        android:textColor="@android:color/black"
+        android:textSize="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select your color"
+        android:id="@+id/textView6"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/textView4"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="check"
+        android:id="@+id/back2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:onClick="check"
+        android:id="@+id/next2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp" />
+
+        <RadioButton
+            android:onClick="color"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:id="@+id/rad1"
+            android:textSize="30dp"
+            android:checked="false"
+            android:textColor="#ff5c5c5c"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+        <RadioButton
+            android:onClick="color"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:id="@+id/rad2"
+            android:textSize="30dp"
+            android:textColor="#ff5c5c5c"
+            android:checked="false"
+            android:layout_below="@+id/rad1"
+            android:layout_alignLeft="@+id/rad1"
+            android:layout_alignStart="@+id/rad1"
+            android:layout_marginTop="5dp" />
+        <RadioButton
+            android:onClick="color"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:id="@+id/rad3"
+            android:checked="false"
+            android:textSize="30dp"
+            android:textColor="#ff5c5c5c"
+            android:layout_below="@+id/rad2"
+            android:layout_alignLeft="@+id/rad2"
+            android:layout_alignStart="@+id/rad2"
+            android:layout_marginTop="5dp" />
+        <RadioButton
+            android:onClick="color"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:checked="true"
+            android:id="@+id/rad4"
+            android:textSize="30dp"
+            android:textColor="#ff5c5c5c"
+            android:layout_below="@+id/rad3"
+            android:layout_alignLeft="@+id/rad3"
+            android:layout_alignStart="@+id/rad3"
+            android:layout_marginTop="5dp" />
+</RelativeLayout>
